@@ -1,0 +1,20 @@
+{
+  "name": "indexofeffective",
+  "version": "1.0.1",
+  "description": "index Of Effective",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "Orel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "indexofeffective"
+  },
+  "bugs": {
+    "url": "https://github.com/devorel/indexofeffective/issues"
+  },
+  "homepage": "https://github.com/devorel/indexofeffective#readme"
+}
