@@ -12,7 +12,7 @@ function makeid(length) {
 
 
 function testIndexOf() {
-    for (let i = 0; i < 100; i++) {//1000000
+    for (let i = 0; i < 1000000; i++) {
         let a = makeid(12);
         let b = makeid(Math.floor(Math.random() * 2) + 1);
         if (a.indexOf(b) != indexOf(a, b)) {
@@ -36,4 +36,4 @@ function testLastIndexOf() {
 }
 
 testIndexOf();
-// testLastIndexOf();
+testLastIndexOf();
