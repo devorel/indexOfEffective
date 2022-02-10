@@ -9,8 +9,9 @@ npm install indexofeffective
 ## API
 
 ```js 
-const {indexOf} = require('indexofeffective');
+const {indexOf,lastIndexOf} = require('indexofeffective');
 let res = indexOf("orel","or");//0
+let res2 = lastIndexOf("orel","or");//0
 ```
 
 ### Testing

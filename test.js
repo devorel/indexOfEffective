@@ -1,4 +1,4 @@
-const {indexOf} = require('./index');
+const {indexOf,lastIndexOf} = require('./index');
 
 function makeid(length) {
     let result = '';
@@ -11,16 +11,29 @@ function makeid(length) {
 }
 
 
-function test() {
-    for (let i = 0; i < 1000000; i++) {
+function testIndexOf() {
+    for (let i = 0; i < 100; i++) {//1000000
         let a = makeid(12);
-        let b = makeid(Math.floor(Math.random() * 6) + 1);
+        let b = makeid(Math.floor(Math.random() * 2) + 1);
         if (a.indexOf(b) != indexOf(a, b)) {
             console.log({'error': [a, b]});
             return;
         }
     }
-    console.log('ok');
+    console.log('indexOf ok');
 }
 
-test();
+function testLastIndexOf() {
+    for (let i = 0; i < 1000000; i++) {
+        let a = makeid(12);
+        let b = makeid(Math.floor(Math.random() * 2) + 1);
+        if (a.lastIndexOf(b) != lastIndexOf(a, b)) {
+            console.log({'error': [a, b]});
+            return;
+        }
+    }
+    console.log('lastIndexOf ok');
+}
+
+testIndexOf();
+// testLastIndexOf();
